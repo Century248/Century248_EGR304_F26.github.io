@@ -82,11 +82,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#examples" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -506,17 +501,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Selection Example
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -526,56 +510,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -801,47 +735,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -865,105 +758,58 @@
 
   <h1>Component Selection Example</h1>
 
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
 <table>
 <thead>
 <tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="" src="../image1.png" /><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><img alt="" src="../image3.png" /><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><img alt="" src="../image1.png" /></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
+<th>Solution</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>DS18B20</td>
+<td>1. Measures temperatures from −55°C to 125°C. 2. Digital output uses only one data pin.</td>
+<td>1. Accuracy is ±0.5°C only within −10°C to 85°C. 2. Requires a pull-up resistor on the data line.</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>ZTP-148SRC1</td>
+<td>1. Measures surface temperature without touching the object. 2. Fast response and high sensitivity.</td>
+<td>1. Requires additional circuitry to process its small output signal. 2. Measures surface temperature rather than directly measuring air temperature.</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>LMT86LPM</td>
+<td>1. Low power consumption. 2. Analog output is easy to read with a microcontroller's ADC.</td>
+<td>1. Requires an analog input pin. 2. Maximum specified accuracy is ±2.7°C.</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><img alt="" src="../image3.png" /></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
 <table>
 <thead>
 <tr>
+<th>Solution</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>LS013B7DH03</td>
+<td>1. Extremely low power consumption. 2. 128 × 128 resolution for displaying plant data.</td>
+<td>1. Requires additional control signals beyond SPI. 2. Monochrome display with no color support.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>NHD-C12832A1Z-FSW-FBW-3V3</td>
+<td>1. SPI interface simplifies communication with a microcontroller. 2. Built-in controller reduces processing requirements.</td>
+<td>1. Low resolution of 128 × 32 pixels. 2. Requires a backlight to improve visibility in low-light conditions.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
-<td></td>
+<td>MDOB128064V2V-WI</td>
+<td>1. OLED provides high contrast and does not require a separate backlight. 2. I²C interface uses only two communication lines.</td>
+<td>1. Small 0.96-inch screen limits the amount of information displayed. 2. White-only display cannot show color-coded plant statuses.</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
 
 
 
