@@ -12,8 +12,5 @@ The block diagram uses a Temperature Sensor (DS18B20) Which is a 1 pin digital s
 
 I connect to all three of the boards, recieving information from pne and two and sending information to three. 
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
-
-
 ## Example Block Diagram 
 ![Indivial Block diagram ](blockdiagram_TO.drawio.png)
