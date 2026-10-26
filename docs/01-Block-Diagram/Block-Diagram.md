@@ -6,19 +6,14 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+
+
+The block diagram uses a Temperature Sensor (DS18B20) Which is a 1 pin digital sensor to send information through my nano board into an LCD (MDOB128064V2V-WI).Additionally, I will be recieving information from the Light and Moisture Sensors that will also be displayed on the LCD. Along with displaying the temperature I will send that temperature to control a motor which will spin and deploy a shade. I use a 9V 1.3A wall connector external power supply to power my board.
+
+I connect to all three of the boards, recieving information from pne and two and sending information to three. 
 
 To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
 ## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
-
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![Indivial Block diagram ](blockdiagram_TO.drawio.png)
