@@ -13,4 +13,4 @@ This schematic is design to support the temperature monitorization and display o
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](Schematic1.pdf), and the Zip folder of the project [*here*](SubsystemSchematicDesign_TO_EGR304.zip).
+The schematic is available as a [downloadable PDF](Schematic1.pdf){: download="Schematic1.pdf"}, and the project files are available as a [ZIP download](SubsystemSchematicDesign_TO_EGR304.zip).
