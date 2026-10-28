@@ -11,7 +11,7 @@ as part of<br>
 for<br>
 <font size= "5"> Team 205 </font><br>
 
-**Submission: month, DD, YYYY**
+**Submission: December, 4, 2026**
 </center>
 
 ## Introduction
@@ -19,10 +19,9 @@ for<br>
 * This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
 
 ### Project Summary
+* This project is part of a [larger project](https://asu-egr304-2026-f.github.io/).
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
-
+* The goal of this project is to moniter the temperature in the area around the plant sensor. Aswell as display that information and other information received to a display board that is built within the device. 
 
 ### My Contribution
 
