@@ -872,309 +872,105 @@
   <h1>Component Selection Example</h1>
 
 <h3 id="temperature-sensor">Temperature Sensor</h3>
-<ol>
-<li>DS18B20</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Digital output (easy MCU connection).</td>
-<td>1. Requires 1-Wire communication.</td>
-</tr>
-<tr>
-<td>2. ±0.5°C accuracy.</td>
-<td>2. Slower temperature conversion.</td>
-</tr>
-<tr>
-<td>3. Waterproof probe options available.</td>
-<td>3. Requires pull-up resistor.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>ZTP-148SRC1</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Non-contact temperature measurement.</td>
-<td>1. Requires additional signal processing.</td>
-</tr>
-<tr>
-<td>2. Fast response time.</td>
-<td>2. More difficult to calibrate.</td>
-</tr>
-<tr>
-<td>3. Includes ambient temperature compensation.</td>
-<td>3. Measures surface temperature, not air temperature.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>LMT86LPM</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. High accuracy (±0.4°C typical).</td>
-<td>1. Requires an analog MCU input.</td>
-</tr>
-<tr>
-<td>2. Very low power consumption.</td>
-<td>2. Requires temperature conversion calculations.</td>
-</tr>
-<tr>
-<td>3. Simple analog output.</td>
-<td>3. Sensitive to electrical noise.</td>
-</tr>
-</tbody>
-</table>
+<p>1. DS18B20
+* $6.93/each
+* <a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS18B20/956983">DS18B20</a>
+| Pros | Cons |
+|---|---|
+| 1. Digital output (easy MCU connection). | 1. Requires 1-Wire communication. |
+| 2. ±0.5°C accuracy. | 2. Slower temperature conversion. |
+| 3. Waterproof probe options available. | 3. Requires pull-up resistor. |</p>
+<p>2. ZTP-148SRC1
+* $2.06/each
+* <a href="https://www.digikey.com/en/products/detail/amphenol-advanced-sensors/ZTP-148SRC1/12471481">ZTP-148SRC1</a>
+| Pros | Cons |
+|---|---|
+| 1. Non-contact temperature measurement. | 1. Requires additional signal processing. |
+| 2. Fast response time. | 2. More difficult to calibrate. |
+| 3. Includes ambient temperature compensation. | 3. Measures surface temperature, not air temperature. |</p>
+<p>3. LMT86LPM
+* $0.71/each
+* <a href="https://www.digikey.com/en/products/detail/texas-instruments/LMT86LPM/6572117">LMT86LPM</a>
+| Pros | Cons |
+|---|---|
+| 1. High accuracy (±0.4°C typical). | 1. Requires an analog MCU input. |
+| 2. Very low power consumption. | 2. Requires temperature conversion calculations. |
+| 3. Simple analog output. | 3. Sensitive to electrical noise. |</p>
 <h3 id="display">Display</h3>
-<ol>
-<li>LS013B7DH03</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Extremely low power consumption.</td>
-<td>1. Monochrome display.</td>
-</tr>
-<tr>
-<td>2. 128 × 128 resolution.</td>
-<td>2. Requires specialized FPC connection.</td>
-</tr>
-<tr>
-<td>3. Good outdoor visibility.</td>
-<td>3. Limited visibility in darkness without backlighting.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>NHD-C12832A1Z-FSW-FBW-3V3</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Low power consumption.</td>
-<td>1. Limited 128 × 32 resolution.</td>
-</tr>
-<tr>
-<td>2. SPI communication.</td>
-<td>2. Small viewing area.</td>
-</tr>
-<tr>
-<td>3. Transflective screen for visibility in different lighting.</td>
-<td>3. Requires external backlight power.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>MDOB128064V2V-WI</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. High contrast OLED display.</td>
-<td>1. Higher power consumption than memory LCD.</td>
-</tr>
-<tr>
-<td>2. 128 × 64 resolution.</td>
-<td>2. Potential OLED burn-in.</td>
-</tr>
-<tr>
-<td>3. Simple I2C communication.</td>
-<td>3. More expensive than basic LCD displays.</td>
-</tr>
-</tbody>
-</table>
+<p>1. LS013B7DH03
+* $12.39/each
+* <a href="https://www.digikey.com/en/products/detail/texas-instruments/LMT86LPM/6572117">LS013B7DH03</a>
+| Pros | Cons |
+|---|---|
+| 1. Extremely low power consumption. | 1. Monochrome display. |
+| 2. 128 × 128 resolution. | 2. Requires specialized FPC connection. |
+| 3. Good outdoor visibility. | 3. Limited visibility in darkness without backlighting. |</p>
+<p>2. NHD-C12832A1Z-FSW-FBW-3V3
+* $10.95/each
+* <a href="https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C12832A1Z-FSW-FBW-3V3/2059236">NHD-C12832A1Z-FSW-FBW-3V3</a>
+| Pros | Cons |
+|---|---|
+| 1. Low power consumption. | 1. Limited 128 × 32 resolution. |
+| 2. SPI communication. | 2. Small viewing area. |
+| 3. Transflective screen for visibility in different lighting. | 3. Requires external backlight power. |</p>
+<p>3. MDOB128064V2V-WI
+* $12.30/each
+* <a href="https://www.digikey.com/en/products/detail/midas-displays/MDOB128064V2V-WI/20841734">MDOB128064V2V-WI</a>
+| Pros | Cons |
+|---|---|
+| 1. High contrast OLED display. | 1. Higher power consumption than memory LCD. |
+| 2. 128 × 64 resolution. | 2. Potential OLED burn-in. |
+| 3. Simple I2C communication. | 3. More expensive than basic LCD displays. |</p>
 <h3 id="power-regulation">Power Regulation</h3>
-<ol>
-<li>L7805ABV-DG</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Fixed 5V output.</td>
-<td>1. Generates excess heat.</td>
-</tr>
-<tr>
-<td>2. Up to 1.5A output current.</td>
-<td>2. Lower power efficiency.</td>
-</tr>
-<tr>
-<td>3. Built-in thermal protection.</td>
-<td>3. Requires heat management at higher loads.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>NJM7805FA</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Stable 5V output.</td>
-<td>1. Generates excess heat.</td>
-</tr>
-<tr>
-<td>2. Up to 1.5A output current.</td>
-<td>2. Lower power efficiency.</td>
-</tr>
-<tr>
-<td>3. Built-in short-circuit protection.</td>
-<td>3. Requires higher input voltage than output.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>MIC5156-3.3BN</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Provides 3.3V regulation.</td>
-<td>1. Requires an external MOSFET.</td>
-</tr>
-<tr>
-<td>2. Low standby current.</td>
-<td>2. More complicated circuit design.</td>
-</tr>
-<tr>
-<td>3. Adjustable output and enable control options.</td>
-<td>3. Requires additional external components.</td>
-</tr>
-</tbody>
-</table>
+<p>1. L7805ABV-DG
+* $1.53/each
+* <a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV-DG/3945936">L7805ABV-DG</a>
+| Pros | Cons |
+|---|---|
+| 1. Fixed 5V output. | 1. Generates excess heat. |
+| 2. Up to 1.5A output current. | 2. Lower power efficiency. |
+| 3. Built-in thermal protection. | 3. Requires heat management at higher loads. |</p>
+<p>2. NJM7805FA
+* $1.85/each
+* <a href="https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM7805FA/805763">NJM7805FA</a>
+| Pros | Cons |
+|---|---|
+| 1. Stable 5V output. | 1. Generates excess heat. |
+| 2. Up to 1.5A output current. | 2. Lower power efficiency. |
+| 3. Built-in short-circuit protection. | 3. Requires higher input voltage than output. |</p>
+<p>3. MIC5156-3.3YN
+* $3.84/each
+* <a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC5156-3-3YN/1030134">MIC5156-3.3YN</a>
+| Pros | Cons |
+|---|---|
+| 1. Provides 3.3V regulation. | 1. Requires an external MOSFET. |
+| 2. Low standby current. | 2. More complicated circuit design. |
+| 3. Adjustable output and enable control options. | 3. Requires additional external components. |</p>
 <h3 id="power">Power</h3>
-<ol>
-<li>36-2477-ND Battery Holder + E91VP AA Batteries</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Portable power source.</td>
-<td>1. Batteries eventually need replacing.</td>
-</tr>
-<tr>
-<td>2. Easy battery replacement.</td>
-<td>2. Limited operating time.</td>
-</tr>
-<tr>
-<td>3. No wall outlet required.</td>
-<td>3. Output voltage decreases as batteries discharge.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>WSU090-1300-R</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Provides regulated 9V DC output.</td>
-<td>1. Requires a wall outlet.</td>
-</tr>
-<tr>
-<td>2. Supplies up to 1.3A.</td>
-<td>2. Not portable without additional power.</td>
-</tr>
-<tr>
-<td>3. Supports 100–240V AC input.</td>
-<td>3. Requires a compatible barrel jack.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>P124 1.2W Solar Panel</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Provides renewable power.</td>
-<td>1. Dependent on sunlight.</td>
-</tr>
-<tr>
-<td>2. Compact outdoor design.</td>
-<td>2. Requires charging circuitry.</td>
-</tr>
-<tr>
-<td>3. 6V output with 200mA current.</td>
-<td>3. Requires battery storage.</td>
-</tr>
-</tbody>
-</table>
+<p>1. 36-2477-ND Battery Holder + E91VP AA Batteries
+* $1.87/each per holder ; $0.42/each per battery
+* <a href="https://www.digikey.com/en/products/detail/keystone-electronics/2477/303822">36-2477-ND Battery Holder</a>
+| Pros | Cons |
+|---|---|
+| 1. Portable power source. | 1. Batteries eventually need replacing. |
+| 2. Easy battery replacement. | 2. Limited operating time. |
+| 3. No wall outlet required. | 3. Output voltage decreases as batteries discharge. |</p>
+<p>2. WSU090-1300-R
+* $7.99/each
+* <a href="https://www.digikey.com/en/products/detail/triad-magnetics/WSU090-1300-R/3094978">WSU090-1300-R</a>
+| Pros | Cons |
+|---|---|
+| 1. Provides regulated 9V DC output. | 1. Requires a wall outlet. |
+| 2. Supplies up to 1.3A. | 2. Not portable without additional power. |
+| 3. Supports 100–240V AC input. | 3. Requires a compatible barrel jack. |</p>
+<p>3. P124 1.2W Solar Panel
+* $14.00/each
+* <a href="https://www.digikey.com/en/products/detail/voltaic-systems/P124/12352797">P124 1.2W Solar Panel</a>
+| Pros | Cons |
+|---|---|
+| 1. Provides renewable power. | 1. Dependent on sunlight. |
+| 2. Compact outdoor design. | 2. Requires charging circuitry. |
+| 3. 6V output with 200mA current. | 3. Requires battery storage. |</p>
 
 
 
