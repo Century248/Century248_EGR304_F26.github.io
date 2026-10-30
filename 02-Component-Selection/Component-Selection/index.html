@@ -550,9 +550,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ds18b20" class="md-nav__link">
+  <a href="#display" class="md-nav__link">
     <span class="md-ellipsis">
-      DS18B20
+      Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-regulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Regulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power
     </span>
   </a>
   
@@ -802,9 +820,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ds18b20" class="md-nav__link">
+  <a href="#display" class="md-nav__link">
     <span class="md-ellipsis">
-      DS18B20
+      Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-regulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Regulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power
     </span>
   </a>
   
@@ -836,7 +872,9 @@
   <h1>Component Selection Example</h1>
 
 <h3 id="temperature-sensor">Temperature Sensor</h3>
-<h2 id="ds18b20">DS18B20</h2>
+<ol>
+<li>DS18B20</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -857,18 +895,19 @@
 <td>3. Waterproof probe options available.</td>
 <td>3. Requires pull-up resistor.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>ZTP-148SRC1</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## ZTP-148SRC1</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Non-contact temperature measurement.</td>
 <td>1. Requires additional signal processing.</td>
@@ -881,18 +920,19 @@
 <td>3. Includes ambient temperature compensation.</td>
 <td>3. Measures surface temperature, not air temperature.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>LMT86LPM</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## LMT86LPM</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. High accuracy (±0.4°C typical).</td>
 <td>1. Requires an analog MCU input.</td>
@@ -905,22 +945,20 @@
 <td>3. Simple analog output.</td>
 <td>3. Sensitive to electrical noise.</td>
 </tr>
+</tbody>
+</table>
+<h3 id="display">Display</h3>
+<ol>
+<li>LS013B7DH03</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>### Display</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>## LS013B7DH03</td>
-<td></td>
-</tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Extremely low power consumption.</td>
 <td>1. Monochrome display.</td>
@@ -933,18 +971,19 @@
 <td>3. Good outdoor visibility.</td>
 <td>3. Limited visibility in darkness without backlighting.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>NHD-C12832A1Z-FSW-FBW-3V3</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## NHD-C12832A1Z-FSW-FBW-3V3</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Low power consumption.</td>
 <td>1. Limited 128 × 32 resolution.</td>
@@ -957,18 +996,19 @@
 <td>3. Transflective screen for visibility in different lighting.</td>
 <td>3. Requires external backlight power.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>MDOB128064V2V-WI</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## MDOB128064V2V-WI</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. High contrast OLED display.</td>
 <td>1. Higher power consumption than memory LCD.</td>
@@ -981,22 +1021,20 @@
 <td>3. Simple I2C communication.</td>
 <td>3. More expensive than basic LCD displays.</td>
 </tr>
+</tbody>
+</table>
+<h3 id="power-regulation">Power Regulation</h3>
+<ol>
+<li>L7805ABV-DG</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>### Power Regulation</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>## L7805ABV-DG</td>
-<td></td>
-</tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Fixed 5V output.</td>
 <td>1. Generates excess heat.</td>
@@ -1009,18 +1047,19 @@
 <td>3. Built-in thermal protection.</td>
 <td>3. Requires heat management at higher loads.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>NJM7805FA</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## NJM7805FA</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Stable 5V output.</td>
 <td>1. Generates excess heat.</td>
@@ -1033,18 +1072,19 @@
 <td>3. Built-in short-circuit protection.</td>
 <td>3. Requires higher input voltage than output.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>MIC5156-3.3BN</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## MIC5156-3.3BN</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Provides 3.3V regulation.</td>
 <td>1. Requires an external MOSFET.</td>
@@ -1057,22 +1097,20 @@
 <td>3. Adjustable output and enable control options.</td>
 <td>3. Requires additional external components.</td>
 </tr>
+</tbody>
+</table>
+<h3 id="power">Power</h3>
+<ol>
+<li>36-2477-ND Battery Holder + E91VP AA Batteries</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>### Power</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>## 36-2477-ND Battery Holder + E91VP AA Batteries</td>
-<td></td>
-</tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Portable power source.</td>
 <td>1. Batteries eventually need replacing.</td>
@@ -1085,18 +1123,19 @@
 <td>3. No wall outlet required.</td>
 <td>3. Output voltage decreases as batteries discharge.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>WSU090-1300-R</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## WSU090-1300-R</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Provides regulated 9V DC output.</td>
 <td>1. Requires a wall outlet.</td>
@@ -1109,18 +1148,19 @@
 <td>3. Supports 100–240V AC input.</td>
 <td>3. Requires a compatible barrel jack.</td>
 </tr>
+</tbody>
+</table>
+<ol>
+<li>P124 1.2W Solar Panel</li>
+</ol>
+<table>
+<thead>
 <tr>
-<td>## P124 1.2W Solar Panel</td>
-<td></td>
+<th>Pros</th>
+<th>Cons</th>
 </tr>
-<tr>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>---</td>
-<td>---</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>1. Provides renewable power.</td>
 <td>1. Dependent on sunlight.</td>
