@@ -550,18 +550,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#external-power-supply" class="md-nav__link">
+  <a href="#ds18b20" class="md-nav__link">
     <span class="md-ellipsis">
-      External Power Supply
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other
+      DS18B20
     </span>
   </a>
   
@@ -811,18 +802,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#external-power-supply" class="md-nav__link">
+  <a href="#ds18b20" class="md-nav__link">
     <span class="md-ellipsis">
-      External Power Supply
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other
+      DS18B20
     </span>
   </a>
   
@@ -854,67 +836,305 @@
   <h1>Component Selection Example</h1>
 
 <h3 id="temperature-sensor">Temperature Sensor</h3>
+<h2 id="ds18b20">DS18B20</h2>
 <table>
 <thead>
 <tr>
-<th>Solution</th>
 <th>Pros</th>
 <th>Cons</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DS18B20</td>
-<td>1. Measures temperatures from −55°C to 125°C. 2. Digital output uses only one data pin.</td>
-<td>1. Accuracy is ±0.5°C only within −10°C to 85°C. 2. Requires a pull-up resistor on the data line.</td>
+<td>1. Digital output (easy MCU connection).</td>
+<td>1. Requires 1-Wire communication.</td>
 </tr>
 <tr>
-<td>ZTP-148SRC1</td>
-<td>1. Measures surface temperature without touching the object. 2. Fast response and high sensitivity.</td>
-<td>1. Requires additional circuitry to process its small output signal. 2. Measures surface temperature rather than directly measuring air temperature.</td>
+<td>2. ±0.5°C accuracy.</td>
+<td>2. Slower temperature conversion.</td>
 </tr>
 <tr>
-<td>LMT86LPM</td>
-<td>1. Low power consumption. 2. Analog output is easy to read with a microcontroller's ADC.</td>
-<td>1. Requires an analog input pin. 2. Maximum specified accuracy is ±2.7°C.</td>
+<td>3. Waterproof probe options available.</td>
+<td>3. Requires pull-up resistor.</td>
 </tr>
 <tr>
-<td>### Display Screen</td>
-<td></td>
+<td>## ZTP-148SRC1</td>
 <td></td>
 </tr>
 <tr>
-<td>Solution</td>
 <td>Pros</td>
 <td>Cons</td>
 </tr>
 <tr>
-<td>---------------------------</td>
-<td>-------------------------------------------------------------------------------------------------------------------------------</td>
-<td>-------------------------------------------------------------------------------------------------------------------------------------</td>
+<td>---</td>
+<td>---</td>
 </tr>
 <tr>
-<td>LS013B7DH03</td>
-<td>1. Extremely low power consumption. 2. 128 × 128 resolution for displaying plant data.</td>
-<td>1. Requires additional control signals beyond SPI. 2. Monochrome display with no color support.</td>
+<td>1. Non-contact temperature measurement.</td>
+<td>1. Requires additional signal processing.</td>
 </tr>
 <tr>
-<td>NHD-C12832A1Z-FSW-FBW-3V3</td>
-<td>1. SPI interface simplifies communication with a microcontroller. 2. Built-in controller reduces processing requirements.</td>
-<td>1. Low resolution of 128 × 32 pixels. 2. Requires a backlight to improve visibility in low-light conditions.</td>
+<td>2. Fast response time.</td>
+<td>2. More difficult to calibrate.</td>
 </tr>
 <tr>
-<td>MDOB128064V2V-WI</td>
-<td>1. OLED provides high contrast and does not require a separate backlight. 2. I²C interface uses only two communication lines.</td>
-<td>1. Small 0.96-inch screen limits the amount of information displayed. 2. White-only display cannot show color-coded plant statuses.</td>
+<td>3. Includes ambient temperature compensation.</td>
+<td>3. Measures surface temperature, not air temperature.</td>
+</tr>
+<tr>
+<td>## LMT86LPM</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. High accuracy (±0.4°C typical).</td>
+<td>1. Requires an analog MCU input.</td>
+</tr>
+<tr>
+<td>2. Very low power consumption.</td>
+<td>2. Requires temperature conversion calculations.</td>
+</tr>
+<tr>
+<td>3. Simple analog output.</td>
+<td>3. Sensitive to electrical noise.</td>
+</tr>
+<tr>
+<td>### Display</td>
+<td></td>
+</tr>
+<tr>
+<td>## LS013B7DH03</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Extremely low power consumption.</td>
+<td>1. Monochrome display.</td>
+</tr>
+<tr>
+<td>2. 128 × 128 resolution.</td>
+<td>2. Requires specialized FPC connection.</td>
+</tr>
+<tr>
+<td>3. Good outdoor visibility.</td>
+<td>3. Limited visibility in darkness without backlighting.</td>
+</tr>
+<tr>
+<td>## NHD-C12832A1Z-FSW-FBW-3V3</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Low power consumption.</td>
+<td>1. Limited 128 × 32 resolution.</td>
+</tr>
+<tr>
+<td>2. SPI communication.</td>
+<td>2. Small viewing area.</td>
+</tr>
+<tr>
+<td>3. Transflective screen for visibility in different lighting.</td>
+<td>3. Requires external backlight power.</td>
+</tr>
+<tr>
+<td>## MDOB128064V2V-WI</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. High contrast OLED display.</td>
+<td>1. Higher power consumption than memory LCD.</td>
+</tr>
+<tr>
+<td>2. 128 × 64 resolution.</td>
+<td>2. Potential OLED burn-in.</td>
+</tr>
+<tr>
+<td>3. Simple I2C communication.</td>
+<td>3. More expensive than basic LCD displays.</td>
+</tr>
+<tr>
+<td>### Power Regulation</td>
+<td></td>
+</tr>
+<tr>
+<td>## L7805ABV-DG</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Fixed 5V output.</td>
+<td>1. Generates excess heat.</td>
+</tr>
+<tr>
+<td>2. Up to 1.5A output current.</td>
+<td>2. Lower power efficiency.</td>
+</tr>
+<tr>
+<td>3. Built-in thermal protection.</td>
+<td>3. Requires heat management at higher loads.</td>
+</tr>
+<tr>
+<td>## NJM7805FA</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Stable 5V output.</td>
+<td>1. Generates excess heat.</td>
+</tr>
+<tr>
+<td>2. Up to 1.5A output current.</td>
+<td>2. Lower power efficiency.</td>
+</tr>
+<tr>
+<td>3. Built-in short-circuit protection.</td>
+<td>3. Requires higher input voltage than output.</td>
+</tr>
+<tr>
+<td>## MIC5156-3.3BN</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Provides 3.3V regulation.</td>
+<td>1. Requires an external MOSFET.</td>
+</tr>
+<tr>
+<td>2. Low standby current.</td>
+<td>2. More complicated circuit design.</td>
+</tr>
+<tr>
+<td>3. Adjustable output and enable control options.</td>
+<td>3. Requires additional external components.</td>
+</tr>
+<tr>
+<td>### Power</td>
+<td></td>
+</tr>
+<tr>
+<td>## 36-2477-ND Battery Holder + E91VP AA Batteries</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Portable power source.</td>
+<td>1. Batteries eventually need replacing.</td>
+</tr>
+<tr>
+<td>2. Easy battery replacement.</td>
+<td>2. Limited operating time.</td>
+</tr>
+<tr>
+<td>3. No wall outlet required.</td>
+<td>3. Output voltage decreases as batteries discharge.</td>
+</tr>
+<tr>
+<td>## WSU090-1300-R</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Provides regulated 9V DC output.</td>
+<td>1. Requires a wall outlet.</td>
+</tr>
+<tr>
+<td>2. Supplies up to 1.3A.</td>
+<td>2. Not portable without additional power.</td>
+</tr>
+<tr>
+<td>3. Supports 100–240V AC input.</td>
+<td>3. Requires a compatible barrel jack.</td>
+</tr>
+<tr>
+<td>## P124 1.2W Solar Panel</td>
+<td></td>
+</tr>
+<tr>
+<td>Pros</td>
+<td>Cons</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1. Provides renewable power.</td>
+<td>1. Dependent on sunlight.</td>
+</tr>
+<tr>
+<td>2. Compact outdoor design.</td>
+<td>2. Requires charging circuitry.</td>
+</tr>
+<tr>
+<td>3. 6V output with 200mA current.</td>
+<td>3. Requires battery storage.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="external-power-supply">External Power Supply</h3>
-<h3 id="other">Other</h3>
-<p>All of my Capacitors, Resistors, Pushbuttons, LEDs, and other components listed above are standard US units. Components with values are listed below
-* Capcitors : 
-* Resistors : </p>
 
 
 
