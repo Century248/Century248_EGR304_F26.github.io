@@ -5,7 +5,9 @@ title: Component Selection Example
 ### Temperature Sensor
 
 1  DS18B20 
+
 * $6.93/each
+
 * [DS18B20](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS18B20/956983)
 
 | Pros | Cons |
@@ -15,7 +17,9 @@ title: Component Selection Example
 | 3. Waterproof probe options available. | 3. Requires pull-up resistor. |
 
 2  ZTP-148SRC1 
+
 * $2.06/each
+
 * [ZTP-148SRC1](https://www.digikey.com/en/products/detail/amphenol-advanced-sensors/ZTP-148SRC1/12471481)
 
 | Pros | Cons |
@@ -25,7 +29,9 @@ title: Component Selection Example
 | 3. Includes ambient temperature compensation. | 3. Measures surface temperature, not air temperature. |
 
 3  LMT86LPM 
+
 * $0.71/each
+
 * [LMT86LPM](https://www.digikey.com/en/products/detail/texas-instruments/LMT86LPM/6572117)
 
 | Pros | Cons |
@@ -39,7 +45,9 @@ Choice: DS18B20
 ### Display
 
 1  LS013B7DH03 
+
 * $12.39/each
+
 * [LS013B7DH03](https://www.digikey.com/en/products/detail/texas-instruments/LMT86LPM/6572117)
 
 | Pros | Cons |
@@ -49,7 +57,9 @@ Choice: DS18B20
 | 3. Good outdoor visibility. | 3. Limited visibility in darkness without backlighting. |
  
 2  NHD-C12832A1Z-FSW-FBW-3V3 
+
 * $10.95/each
+
 * [NHD-C12832A1Z-FSW-FBW-3V3](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C12832A1Z-FSW-FBW-3V3/2059236)
 
 | Pros | Cons |
@@ -59,7 +69,9 @@ Choice: DS18B20
 | 3. Transflective screen for visibility in different lighting. | 3. Requires external backlight power. |
 
 3  MDOB128064V2V-WI 
+
 * $12.30/each
+
 * [MDOB128064V2V-WI](https://www.digikey.com/en/products/detail/midas-displays/MDOB128064V2V-WI/20841734)
 
 | Pros | Cons |
@@ -73,7 +85,9 @@ Choice: MDOB128064V2V-WI
 ### Power Regulation
 
 1  L7805ABV-DG 
+
 * $1.53/each
+
 * [L7805ABV-DG](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV-DG/3945936)
 
 | Pros | Cons |
@@ -83,7 +97,9 @@ Choice: MDOB128064V2V-WI
 | 3. Built-in thermal protection. | 3. Requires heat management at higher loads. |
 
 2  NJM7805FA 
+
 * $1.85/each
+
 * [NJM7805FA](https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM7805FA/805763)
 
 | Pros | Cons |
@@ -93,7 +109,9 @@ Choice: MDOB128064V2V-WI
 | 3. Built-in short-circuit protection. | 3. Requires higher input voltage than output. |
 
 3  MIC5156-3.3YN 
+
 * $3.84/each
+
 * [MIC5156-3.3YN](https://www.digikey.com/en/products/detail/microchip-technology/MIC5156-3-3YN/1030134)
 
 | Pros | Cons |
@@ -107,7 +125,9 @@ Choice:L7805ABV-DG
 ### Power
 
 1  36-2477-ND Battery Holder + E91VP AA Batteries 
-* $1.87/each per holder ; $0.42/each per battery
+
+* $1.87/each per holder - $0.42/each per battery
+
 * [36-2477-ND Battery Holder](https://www.digikey.com/en/products/detail/keystone-electronics/2477/303822)
 
 | Pros | Cons |
@@ -117,7 +137,9 @@ Choice:L7805ABV-DG
 | 3. No wall outlet required. | 3. Output voltage decreases as batteries discharge. |
 
 2  WSU090-1300-R 
+
 * $7.99/each
+
 * [WSU090-1300-R](https://www.digikey.com/en/products/detail/triad-magnetics/WSU090-1300-R/3094978)
 
 | Pros | Cons |
@@ -127,7 +149,9 @@ Choice:L7805ABV-DG
 | 3. Supports 100–240V AC input. | 3. Requires a compatible barrel jack. |
 
 3  P124 1.2W Solar Panel 
+
 * $14.00/each
+
 * [P124 1.2W Solar Panel](https://www.digikey.com/en/products/detail/voltaic-systems/P124/12352797)
 
 | Pros | Cons |
