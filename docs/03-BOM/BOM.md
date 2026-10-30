@@ -6,23 +6,17 @@ tags:
 ---
 
 ## Overview
-written context
 
-## Bill of Materials Example (as Table)
+This Bill of Materials documents Team B.A.M.F.'s temperature sensor module and display, with all the necessary parts (with suppliers and datasheets) per prototype unit. This serves as documentation to the necessary parts that make up the subsystem, so it can be referred to and replicated.
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+Some important notes: The unit quantity is how many of the component in the individual module, the unit cost is how much each individual component costs, and the total prototype cost is how much a it would cost to complete a prototype with the parts. # Ordered is extra parts for breadbaording and replacements if need be, not how many are necessary.
 
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
+## Bill of Materials
 
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
+![Bill Of Materials](bom.png){style width: "2000"}
 
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
+**Figure 1:** Bill of Materials as a screenshot.
 
-## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
+## Resources
 
-As you can see, the text can be difficult to read without opening the image.
+The BOM as a PDF download is available [here](bom.pdf), and a Microsoft Excel Sheet [here](BOM_TO_EGR304.xlsx).
