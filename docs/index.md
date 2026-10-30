@@ -21,7 +21,7 @@ for<br>
 ### Project Summary
 * The temperature sensor is a part of this project to detect how hot or cold the area around the plant moniter is. This information will be used for display and will also be sent to a seperate board that will be able to activate or deactivate a motor with a fan attached. This allows the user to moniter the temperature and other information such as light level and moisture that is sent from other boards.
 * This sensor works by taking the temperature with two internal crystal oscillators, one with a low temperature coeffecient and one with a high temperature coeffecient. The difference is then taken and converted from analog to digital internally and the temperature is given through the one information pin.
-* For more information about the entire project, please click [here](https://asu-egr304-2026-f.github.io/).
+* For more information about the entire project, please click [here](https://asu-egr304-2026-f.github.io/ASU-EGR304-2026-F-205.github.io/).
 
 ### My Contribution
 
