@@ -3,22 +3,78 @@ title: Component Selection Example
 ---
 
 ### Temperature Sensor
-| Solution    | Pros                                                                                                | Cons                                                                                                                                                 |
-|-------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DS18B20     | 1. Measures temperatures from −55°C to 125°C. 2. Digital output uses only one data pin.             | 1. Accuracy is ±0.5°C only within −10°C to 85°C. 2. Requires a pull-up resistor on the data line.                                                    |
-| ZTP-148SRC1 | 1. Measures surface temperature without touching the object. 2. Fast response and high sensitivity. | 1. Requires additional circuitry to process its small output signal. 2. Measures surface temperature rather than directly measuring air temperature. |
-| LMT86LPM    | 1. Low power consumption. 2. Analog output is easy to read with a microcontroller's ADC.            | 1. Requires an analog input pin. 2. Maximum specified accuracy is ±2.7°C.                                                                            |
-### Display Screen
-| Solution                  | Pros                                                                                                                          | Cons                                                                                                                                |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| LS013B7DH03               | 1. Extremely low power consumption. 2. 128 × 128 resolution for displaying plant data.                                        | 1. Requires additional control signals beyond SPI. 2. Monochrome display with no color support.                                     |
-| NHD-C12832A1Z-FSW-FBW-3V3 | 1. SPI interface simplifies communication with a microcontroller. 2. Built-in controller reduces processing requirements.     | 1. Low resolution of 128 × 32 pixels. 2. Requires a backlight to improve visibility in low-light conditions.                        |
-| MDOB128064V2V-WI          | 1. OLED provides high contrast and does not require a separate backlight. 2. I²C interface uses only two communication lines. | 1. Small 0.96-inch screen limits the amount of information displayed. 2. White-only display cannot show color-coded plant statuses. |
-
-### External Power Supply
-
-
-### Other
-All of my Capacitors, Resistors, Pushbuttons, LEDs, and other components listed above are standard US units. Components with values are listed below
-* Capcitors : 
-* Resistors : 
+## DS18B20
+| Pros | Cons |
+|---|---|
+| 1. Digital output (easy MCU connection). | 1. Requires 1-Wire communication. |
+| 2. ±0.5°C accuracy. | 2. Slower temperature conversion. |
+| 3. Waterproof probe options available. | 3. Requires pull-up resistor. |
+## ZTP-148SRC1
+| Pros | Cons |
+|---|---|
+| 1. Non-contact temperature measurement. | 1. Requires additional signal processing. |
+| 2. Fast response time. | 2. More difficult to calibrate. |
+| 3. Includes ambient temperature compensation. | 3. Measures surface temperature, not air temperature. |
+## LMT86LPM
+| Pros | Cons |
+|---|---|
+| 1. High accuracy (±0.4°C typical). | 1. Requires an analog MCU input. |
+| 2. Very low power consumption. | 2. Requires temperature conversion calculations. |
+| 3. Simple analog output. | 3. Sensitive to electrical noise. |
+### Display
+## LS013B7DH03
+| Pros | Cons |
+|---|---|
+| 1. Extremely low power consumption. | 1. Monochrome display. |
+| 2. 128 × 128 resolution. | 2. Requires specialized FPC connection. |
+| 3. Good outdoor visibility. | 3. Limited visibility in darkness without backlighting. |
+## NHD-C12832A1Z-FSW-FBW-3V3
+| Pros | Cons |
+|---|---|
+| 1. Low power consumption. | 1. Limited 128 × 32 resolution. |
+| 2. SPI communication. | 2. Small viewing area. |
+| 3. Transflective screen for visibility in different lighting. | 3. Requires external backlight power. |
+## MDOB128064V2V-WI
+| Pros | Cons |
+|---|---|
+| 1. High contrast OLED display. | 1. Higher power consumption than memory LCD. |
+| 2. 128 × 64 resolution. | 2. Potential OLED burn-in. |
+| 3. Simple I2C communication. | 3. More expensive than basic LCD displays. |
+### Power Regulation
+## L7805ABV-DG
+| Pros | Cons |
+|---|---|
+| 1. Fixed 5V output. | 1. Generates excess heat. |
+| 2. Up to 1.5A output current. | 2. Lower power efficiency. |
+| 3. Built-in thermal protection. | 3. Requires heat management at higher loads. |
+## NJM7805FA
+| Pros | Cons |
+|---|---|
+| 1. Stable 5V output. | 1. Generates excess heat. |
+| 2. Up to 1.5A output current. | 2. Lower power efficiency. |
+| 3. Built-in short-circuit protection. | 3. Requires higher input voltage than output. |
+## MIC5156-3.3BN
+| Pros | Cons |
+|---|---|
+| 1. Provides 3.3V regulation. | 1. Requires an external MOSFET. |
+| 2. Low standby current. | 2. More complicated circuit design. |
+| 3. Adjustable output and enable control options. | 3. Requires additional external components. |
+### Power
+## 36-2477-ND Battery Holder + E91VP AA Batteries
+| Pros | Cons |
+|---|---|
+| 1. Portable power source. | 1. Batteries eventually need replacing. |
+| 2. Easy battery replacement. | 2. Limited operating time. |
+| 3. No wall outlet required. | 3. Output voltage decreases as batteries discharge. |
+## WSU090-1300-R
+| Pros | Cons |
+|---|---|
+| 1. Provides regulated 9V DC output. | 1. Requires a wall outlet. |
+| 2. Supplies up to 1.3A. | 2. Not portable without additional power. |
+| 3. Supports 100–240V AC input. | 3. Requires a compatible barrel jack. |
+## P124 1.2W Solar Panel
+| Pros | Cons |
+|---|---|
+| 1. Provides renewable power. | 1. Dependent on sunlight. |
+| 2. Compact outdoor design. | 2. Requires charging circuitry. |
+| 3. 6V output with 200mA current. | 3. Requires battery storage. |
