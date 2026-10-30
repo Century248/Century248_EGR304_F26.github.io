@@ -126,7 +126,9 @@ Choice:L7805ABV-DG
 
 1  36-2477-ND Battery Holder + E91VP AA Batteries 
 
-* $1.87/each per holder - $0.42/each per battery
+* $1.87/each per holder
+
+* $0.42/each per battery
 
 * [36-2477-ND Battery Holder](https://www.digikey.com/en/products/detail/keystone-electronics/2477/303822)
 
@@ -136,17 +138,17 @@ Choice:L7805ABV-DG
 | 2. Easy battery replacement. | 2. Limited operating time. |
 | 3. No wall outlet required. | 3. Output voltage decreases as batteries discharge. |
 
-2  WSU090-1300-R 
+2  YS39-2402500-D1J 
 
-* $7.99/each
+* $11.95/each
 
-* [WSU090-1300-R](https://www.digikey.com/en/products/detail/triad-magnetics/WSU090-1300-R/3094978)
+* [YS39-2402500-D1J](https://www.jameco.com/z/YS39-2402500-D1J-Yingjiao-Switching-AC-DC-Wall-Adapter-24-VDC-2-5A-2-1mm-DC-Plug_2734919.html?srsltid=AYCX9vKuY_Uvt33HkNGylUIRM1MnQ0eHG0Q413BNbzZeDB-r4d8WJlNP)
 
 | Pros | Cons |
 |---|---|
-| 1. Provides regulated 9V DC output. | 1. Requires a wall outlet. |
-| 2. Supplies up to 1.3A. | 2. Not portable without additional power. |
-| 3. Supports 100–240V AC input. | 3. Requires a compatible barrel jack. |
+| 1. Provides high output power (60W). | 1. Requires a wall outlet, limiting portability. |
+| 2. Built-in short-circuit, overload, and overvoltage protection. | 2. 24V output requires additional voltage regulation for 5V and 3.3V components. |
+| 3. Wide AC input range (85–265V). | 3. Larger and heavier than a small battery-based power source. |
 
 3  P124 1.2W Solar Panel 
 
@@ -160,4 +162,4 @@ Choice:L7805ABV-DG
 | 2. Compact outdoor design. | 2. Requires charging circuitry. |
 | 3. 6V output with 200mA current. | 3. Requires battery storage. |
 
-Choice: WSU090-1300-R 
+Choice: YS39-2402500-D1J 
