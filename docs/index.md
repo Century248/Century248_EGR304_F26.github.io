@@ -11,23 +11,28 @@ as part of<br>
 for<br>
 <font size= "5"> Team 205 </font><br>
 
-**Submission: December, 4, 2026**
+**Submission: October, 29, 2026**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* This datasheet is meant to document the process of the temperature sensing portion and displaying of information of Project B.A.M.F's plant moniter.
 
 ### Project Summary
-* This project is part of a [larger project](https://asu-egr304-2026-f.github.io/).
-
-* The goal of this project is to moniter the temperature in the area around the plant sensor. Aswell as display that information and other information received to a display board that is built within the device. 
+* The temperature sensor is a part of this project to detect how hot or cold the area around the plant moniter is. This information will be used for display and will also be sent to a seperate board that will be able to activate or deactivate a motor with a fan attached. This allows the user to moniter the temperature and other information such as light level and moisture that is sent from other boards.
+* This sensor works by taking the temperature with two internal crystal oscillators, one with a low temperature coeffecient and one with a high temperature coeffecient. The difference is then taken and converted from analog to digital internally and the temperature is given through the one information pin.
+* For more information about the entire project, please click [here](https://asu-egr304-2026-f.github.io/).
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+* My contributions to this project are my personal Datasheet which goes over the temperature sensing portion as well as display of information. This includes a thought out diagram, selection of components, bill of materials, complete schematic, and power budget.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+* To review the diagram of connections, you can review it in the [Block Diagram](https://century248.github.io/Century248_EGR304_F26.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
 
-For all the sections
+* To review the details of the important components, you can review it in the [Component Selection](https://century248.github.io/Century248_EGR304_F26.github.io/02-Component-Selection/Component-Selection/) section of the datasheet.
+
+* To review the details of the list of all materials, you can review it in the [BOM](https://century248.github.io/Century248_EGR304_F26.github.io/03-BOM/BOM/) section of the datasheet.
+
+* To review the details of the wiring diagram, you can review it in the [Schematic](https://century248.github.io/Century248_EGR304_F26.github.io/04-Schematic/schematic/) section of the datasheet.
+
+* To review the details of the power analysis, you can review it in the [Power Budget](https://century248.github.io/Century248_EGR304_F26.github.io/05-Power-Budget/Power-Budget/) section of the datasheet.
