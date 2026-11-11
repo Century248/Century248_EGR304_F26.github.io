@@ -14,3 +14,5 @@ From the prepare Power Budget, the L7805ABV-DG voltage regulator is rated for up
 ## Resouces
 
 The power budget as a PDF download is available [*here*](powerbudget.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetEGR304TO.xlsx).
+
+
